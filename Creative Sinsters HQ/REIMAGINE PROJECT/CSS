@@ -1,0 +1,157 @@
+body {
+    background-color: salmon;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    position: relative; /* Needed for the dropdown positioning */
+}
+
+.navbar-menu a {
+    display: block;
+    padding: 15px 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    
+    background-color: rgb(34, 173, 173);
+    position: absolute;
+    z-index: 1000;
+    top: 100%; /* Position the dropdown below its parent */
+    left: 0;
+    display: none;
+    flex-direction: column;
+    /* padding: 10px; */
+    width: 500px; 
+    height: 300px;
+}
+
+.dropdown li {
+    display: flex;
+    margin: 0 10px;
+    color: aqua;
+}
+
+.navbar-menu li:hover    > .dropdown {
+        display: flex; }
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-buttons {
+    display: flex;
+}
+
+.navbar-buttons .login-btn,
+.navbar-buttons .signup-btn {
+    margin-left: 10px;
+    padding: 10px 15px;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-buttons .login-btn:hover,
+.navbar-buttons .signup-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+#dcontent
+{
+    display: flex;
+    
+    
+
+}
+#dcontent img
+{
+    
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#hbook h2
+{
+  margin-left: 30px;
+}
+
+#hfilm h2
+{
+  margin-left: 30px;
+}
+
+
+#experience h2
+{
+  margin-left: 30px;
+}
+
+.dropdown li {
+  
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Align items at the center horizontally */
+    text-align: center; /* Align text at the center */
+}
+
+
+/* for quizz */
+
+
+#qcontent
+{
+    display: flex;
+    
+}
+#qcontent img
+{
+    
+    max-width: 60%;
+    max-height: 60%;
+}
+
+#quizz h2
+{
+  margin-left: 55px;
+}
+
+
+#puzzle h2
+{
+  margin-left: 55px;
+}
+
+
+
+
+.dropdown li {
+    /* Other styles */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Align items at the center horizontally */
+    text-align: center; /* Align text at the center */
+}
+
