@@ -1,0 +1,332 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: #333;
+    /* Dark Gray */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input,
+.search-bar button {
+    padding: 5px;
+}
+
+
+/* Hero Section */
+
+header {
+    background: url('header-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black for readability */
+}
+
+
+/* Main Content */
+
+main {
+    padding: 20px;
+}
+
+
+/* Do You Know Section */
+
+#do-you-know {
+    background-color: #ff9999;
+    /* Light Red */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#do-you-know .content {
+    display: flex;
+    gap: 20px;
+    background-color: #ffcccb;
+    /* Light Coral */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#do-you-know .video {
+    background-color: #ff6666;
+    /* Red */
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+
+/* Poll Section */
+
+#poll {
+    background-color: #e6e6fa;
+    /* Lavender */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#poll .options {
+    background-color: #d8bfd8;
+    /* Thistle */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#poll .options button {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #dda0dd;
+    /* Plum */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* News Section */
+
+#news {
+    background-color: #add8e6;
+    /* Light Blue */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#news .news-item {
+    display: flex;
+    gap: 20px;
+    background-color: #b0e0e6;
+    /* Powder Blue */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#news .news-item img {
+    width: 100px;
+    height: 100px;
+    background-color: #87ceeb;
+    /* Sky Blue */
+    border-radius: 5px;
+}
+
+#news .news-content {
+    background-color: #afeeee;
+    /* Pale Turquoise */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* E-Commerce Section */
+
+#e-commerce {
+    background-color: #f5f5dc;
+    /* Beige */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#e-commerce .products {
+    display: flex;
+    gap: 20px;
+    background-color: #fafad2;
+    /* Light Goldenrod Yellow */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Image and text for each product in the E-Commerce Section */
+
+#e-commerce .product img {
+    width: 100px;
+    /* Set the width of the product image */
+    height: 100px;
+    /* Set the height of the product image */
+    background-color: #fffacd;
+    /* Lemon Chiffon background for product images */
+    border-radius: 5px;
+    /* Slightly rounded corners for images */
+}
+
+#e-commerce .product p {
+    margin: 10px 0;
+    /* Space between product image and text */
+}
+
+
+/* Quiz Section */
+
+#quizzes {
+    background-color: #98fb98;
+    /* Pale Green background */
+    padding: 20px;
+    /* Padding around the section */
+    border-radius: 10px;
+    /* Rounded corners for the section */
+}
+
+#quizzes .quiz {
+    display: flex;
+    /* Align items in a column */
+    flex-direction: column;
+    /* Set direction of items to column */
+    align-items: center;
+    /* Center items horizontally */
+    gap: 10px;
+    /* Space between items */
+    background-color: #90ee90;
+    /* Light Green background for each quiz */
+    padding: 10px;
+    /* Padding around each quiz */
+    border-radius: 5px;
+    /* Rounded corners for each quiz */
+}
+
+#quizzes .quiz img {
+    width: 100px;
+    /* Set width of quiz image */
+    height: 100px;
+    /* Set height of quiz image */
+    background-color: #7cfc00;
+    /* Lawn Green background for quiz images */
+    border-radius: 5px;
+    /* Slightly rounded corners for images */
+}
+
+#quizzes .quiz p {
+    margin: 0;
+    /* Remove default margin */
+}
+
+
+/* Character Section */
+
+#characters {
+    background-color: #dda0dd;
+    /* Plum background */
+    padding: 20px;
+    /* Padding around the section */
+    border-radius: 10px;
+    /* Rounded corners for the section */
+}
+
+#characters .character {
+    display: flex;
+    /* Align items in a column */
+    flex-direction: column;
+    /* Set direction of items to column */
+    align-items: center;
+    /* Center items horizontally */
+    gap: 10px;
+    /* Space between items */
+    background-color: #ee82ee;
+    /* Violet background for each character */
+    padding: 10px;
+    /* Padding around each character */
+    border-radius: 5px;
+    /* Rounded corners for each character */
+}
+
+#characters .character img {
+    width: 100px;
+    /* Set width of character image */
+    height: 100px;
+    /* Set height of character image */
+    background-color: #da70d6;
+    /* Orchid background for character images */
+    border-radius: 5px;
+    /* Slightly rounded corners for images */
+}
+
+#characters .character p {
+    margin: 0;
+    /* Remove default margin */
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    /* Dark Gray background */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Center text */
+    padding: 20px 0;
+    /* Padding above and below the footer text */
+}
+
+footer ul {
+    list-style: none;
+    /* Remove default list styling */
+    display: flex;
+    /* Align list items in a row */
+    justify-content: center;
+    /* Center list items horizontally */
+    gap: 20px;
+    /* Space between list items */
+    padding: 0;
+    /* Remove default padding */
+}
+
+footer ul li a {
+    color: #fff;
+    /* White text color for links */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+
+/* Ensure footer is at the bottom even if content is short */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    /* Allow main content to grow and fill available space */
+}
