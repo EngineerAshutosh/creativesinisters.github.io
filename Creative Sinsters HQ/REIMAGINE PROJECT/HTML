@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizarding World Nav Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="https://images.ctfassets.net/usf1vwtuqyxm/1uzo3DWrgwqEsWOWiYUoEA/2127408dc271e6e7f2ed009359ccbcaf/WW_Hero_Image.jpg?fm=jpg&q=70&w=2560" alt="Logo">
+            </div>
+            <ul class="navbar-menu" >
+                <li><a href="#">NEWS & FEATURES</a></li>
+                <li><a href="#">QUIZZES & PUZZLES</a>
+                 <ul class="dropdown">
+                    <div id="qcontent">
+                        <div id="quizz">
+                            <span> <h2> quizz</h2></span>
+                            <li> <img src="https://m.media-amazon.com/images/I/81q77Q39nEL._AC_UF1000,1000_QL80_.jpg" alt=""><a href="#"></a></li>
+                        </div>
+                        
+                        <div id="puzzle">
+                            <span> <h2> puzzle</h2></span>
+                            <li> <img src="https://m.media-amazon.com/images/I/81q77Q39nEL._AC_UF1000,1000_QL80_.jpg" alt=""><a href="#"></a></li>
+                        </div>
+
+                    </div>
+                 </ul></div>
+                </li>
+                <li><a href="#">J.K. ROWLING ARCHIVE</a></li>
+                <li><a href="#">DISCOVER</a>
+                    <ul class="dropdown">
+                        <div id="dcontent">
+                            <div id="hbook">
+                                <span> <h2> BOOK</h2></span>
+                                <li> <img src="https://m.media-amazon.com/images/I/81q77Q39nEL._AC_UF1000,1000_QL80_.jpg" alt=""><a href="#"></a></li>
+                            </div>
+                            
+                            <div id="hfilm">
+                                <span> <h2> FILM</h2></span>
+                                <li> <img src="https://m.media-amazon.com/images/I/81q77Q39nEL._AC_UF1000,1000_QL80_.jpg" alt=""><a href="#"></a></li>
+                            </div>
+
+                            <div id="experience">
+                                <span> <h2> experience</h2></span>
+                                <li> <img src="https://m.media-amazon.com/images/I/81q77Q39nEL._AC_UF1000,1000_QL80_.jpg" alt=""><a href="#"></a></li>
+                            </div>
+
+
+
+                         <!-- <li><a href="#">BOOKS</a></li>
+                        <li><a href="#">FILMS</a></li>
+                        <li><a href="#">PORTKEY GAMES</a></li>
+                        <li><a href="#">ON STAGE</a></li>
+                        <li><a href="#">EXPERIENCES</a></li>
+                        </div> -->
+                        
+                    </ul>
+                </li>
+                <li><a href="#">HOGWARTS SORTING</a></li>
+                <li><a href="#">FOR KIDS</a></li>
+                <li><a href="#">PATRONUS EXPERIENCE</a></li>
+                <li><a href="#">PORTRAIT MAKER</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li class="more"><a href="#">MORE</a></li>
+            </ul>
+            <div class="navbar-buttons">
+                <button class="login-btn">LOG IN</button>
+                <button class="signup-btn">SIGN UP</button>
+            </div>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>
