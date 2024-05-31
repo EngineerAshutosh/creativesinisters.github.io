@@ -451,7 +451,7 @@
  }
  
  #top {
-     background-color: #ffc107;
+     background-color: rgb(0,0,0);
      padding: 20px;
      text-align: center;
      color: #000;
