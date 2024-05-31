@@ -1,41 +1,36 @@
-let votes = [0, 0, 0, 0];
-let totalVotes = 0;
+let currentInd = 0;
+const itemsToShow = 4;
 
-function vote(option) {
-    votes[option]++;
-    totalVotes++;
-    updatePoll();
-}
-
-function updatePoll() {
-    votes.forEach((voteCount, index) => {
-        const percentage = ((voteCount / totalVotes) * 100).toFixed(1);
-        document.getElementById(`option${index}`).style.width = `${percentage}%`;
-        document.getElementById(`percentage${index}`).innerText = `${percentage}%`;
+function showSlides(index) {
+    const slides = document.querySelectorAll('.product-item');
+    if (index >= slides.length) currentInd = 0;
+    if (index < 0) currentIndex = slides.length - itemsToShow;
+    
+    slides.forEach((slide, i) => {
+        slide.style.display = (i >= currentInd && i < currentInd + itemsToShow) ? "block" : "none";
     });
+    
+    // Disable buttons at the edges
+    document.getElementById('prevBtn').disabled = currentInd === 0;
+    document.getElementById('nextBtn').disabled = currentInd + itemsToShow >= slides.length;
 }
 
-document.addEventListener("DOMContentLoaded", updatePoll);
+document.getElementById('nextBtn').addEventListener('click', () => {
+    currentInd += itemsToShow;
+    showSlides(currentInd);
+});
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+    currentInd -= itemsToShow;
+    showSlides(currentInd);
+});
+
+// Initialize the slideshow
+showSlides(currentInd);
 
 
-let currentIndex = 0;
 
-function moveCarousel(direction) {
-    const track = document.querySelector('.carousel-track');
-    const slides = document.querySelectorAll('.carousel-slide');
-    const slideWidth = slides[0].offsetWidth + 10; // Including padding and margin
-    const maxIndex = slides.length - 1;
 
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = 0;
-    } else if (currentIndex > maxIndex) {
-        currentIndex = maxIndex;
-    }
-
-    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-}
 
 // Variables 
 var houses = [{
@@ -58,14 +53,15 @@ var houses = [{
         color: "#1a472a",
         message: "Congrats, you're in Slytherin!"
     },
-];
+]; 
 var sortButton = document.getElementById("sortButton");
 
 // Creates a Sort Function 
 function sortHouse() {
     var selection = houses[Math.floor(Math.random() * houses.length)];
     document.getElementById("message").innerHTML = selection.message;
-    document.body.style.backgroundColor = selection.color;
+    // document.body.style.backgroundColor = selection.color;
+    document.getElementById("wrap").style.backgroundColor = selection.color;
 }
 
 // Call Sort Function On Click
